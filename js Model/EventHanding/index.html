@@ -4,13 +4,43 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+        #main{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+           /* padding: 30px; */
+            width: 100%;
+            height: 100%;
+            /* background-color: #222; */
+        }
+        h2{
+            color: #555;
+            font-size: 10rem;
+            font-weight: 600;
+            letter-spacing:-2rem;
+            user-select: none;
+        }
+        input{
+            display: none;
+        }
+        #btn{
+            padding: 12px 22px;
+            background-color: red;
+            color: white;
+            border-radius: 5px;
+        }
+        #main #btn:hover{
+            background-color: rgb(rgb(56, 127, 109))!important;
+        }
+    </style>
 </head>
 <body>
     <p>Lorem ipsum dolor sit amet.</p>
 
     <input type="text" placeholder="Name">
 
-    <h1>Select Your Device</h1>
+    <h1 id="device">Select Your Device</h1>
     <select>
         <option selected disabled>Choose Your Device</option>
         <option value="samsung">Samsung</option>
@@ -18,6 +48,15 @@
         <option value="apple">Apple</option>
         <option value="oppo">Oppo</option>
     </select>
+
+    <h2></h2>
+
+    <div id="main">
+        <input id="fileinp" type="file">
+        <div id="btn">
+            uplode File
+        </div>
+    </div>
     <script src="script.js"></script>
 </body>
 </html>
