@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100">
+
+    <div class="flex justify-center items-center min-h-screen">
+        <form onsubmit="handleSubmit(event)"
+              class="bg-white p-8 rounded-xl shadow-lg w-96">
+
+            <h2 class="text-2xl font-bold text-center mb-6">
+                Registration Form
+            </h2>
+
+            <div class="mb-4">
+                <input
+                    type="text"
+                    placeholder="Enter Your Name"
+                    class="w-full border border-gray-300 rounded-lg p-3 focus:outline-none focus:ring-2 focus:ring-blue-500" id="name" required>
+            </div>
+
+            <div class="mb-4">
+                <input
+                    type="email"
+                    placeholder="Enter Your Email"
+                    class="w-full border border-gray-300 rounded-lg p-3 focus:outline-none focus:ring-2 focus:ring-blue-500" id="email" required>
+            </div>
+
+            <div class="mb-4">
+                <input
+                    type="password"
+                    placeholder="Enter Password"
+                    class="w-full border border-gray-300 rounded-lg p-3 focus:outline-none focus:ring-2 focus:ring-blue-500" id="password" required>
+            </div>
+
+            <div class="mb-6">
+                <input
+                    type="text"
+                    placeholder="Mobile Number"
+                    class="w-full border border-gray-300 rounded-lg p-3 focus:outline-none focus:ring-2 focus:ring-blue-500" id="mobile" required>
+            </div>
+
+            <button
+                type="submit"
+                class="w-full bg-blue-600 text-white py-3 rounded-lg hover:bg-sky-700 transition">
+                Submit
+            </button>
+
+        </form>
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
