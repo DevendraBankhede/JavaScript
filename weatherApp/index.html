@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Weather App</title>
     <link rel="stylesheet" href="style.css">
     <link
       rel="stylesheet"
@@ -21,32 +21,33 @@
     <img src="image/sky.jpg" class="w-100 h-100 position-absolute top-0 start-0 object-fit-cover" alt="">
 
     <div class="card rounded-3 position-relative z-1 text-white">
-        <div class="search mb-4">
+        <div class="search mb-3">
             <input type="text" placeholder="Enter city name" class="form-control" id="cityname">
-            <button id="btn"><i class="bi bi-search"></i></button>
+            <button id="btn" aria-label="Search"><i class="bi bi-search"></i></button>
         </div>
 
-        <div class="weather text-center">
-            <i class="bi bi-cloud-rain display-3"></i>
-            <h1 class="temp">22°c</h1>
-            <h2 class="city">New York</h2>
-            <div class="details ">
+        <p class="error text-center fw-bold" id="error-msg" style="display: none;"></p>
+
+        <div class="weather text-center" id="weather-box">
+            <i class="bi bi-cloud-sun display-3" id="weather-icon"></i>
+            <h1 class="temp">--°C</h1>
+            <h2 class="city">Enter a City</h2>
+            <div class="details">
                 <div class="col">
                     <div>
                         <i class="bi bi-droplet fs-1"></i>
-                        <p class="humidity fs-4">50%</p>
+                        <p class="humidity fs-4">--%</p>
                         <p class="fs-4">Humidity</p>
                     </div>
                 </div>
                 <div class="col">
                     <div>
                         <i class="bi bi-wind fs-1"></i>
-                        <p class="wind fs-4">15 km/h</p>
+                        <p class="wind fs-4">-- km/h</p>
                         <p class="fs-4">Wind</p>
                     </div>
                 </div>
             </div>
-
         </div>
     </div>
     
