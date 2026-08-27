@@ -74,3 +74,12 @@ body{
     align-items: center;
     text-align: left;
 }
+.error {
+    background: rgba(255, 75, 75, 0.2);
+    border: 1px solid rgba(255, 75, 75, 0.4);
+    border-radius: 12px;
+    padding: 10px 16px;
+    color: #ff8080 !important;
+    font-size: 15px;
+}
+
